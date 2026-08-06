@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use Physics X 95 in teaching or research, please cite this software."
+title: "Physics X 95: History Lab"
+type: software
+authors:
+  - family-names: Slade
+    given-names: Trent
+version: 1.0.0
+date-released: 2026-08-06
+license: MPL-2.0
+repository-code: "https://github.com/QSOLKCB/phalpern"
+url: "https://qsolkcb.github.io/phalpern/"
+abstract: "A zero-build, offline-first multimedia history-of-physics lab inspired by Paul Halpern's writing, with original source-aware articles, classroom pathways, a timeline, glossary, and tested interactive exhibits."
+keywords:
+  - history of physics
+  - science education
+  - Paul Halpern
+  - Ludwig Boltzmann
+  - Ernst Mach
+  - Albert Einstein
+  - Solvay Conference
+  - Richard Feynman

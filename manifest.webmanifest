@@ -1,0 +1,19 @@
+{
+  "name": "Physics X 95 — History Lab",
+  "short_name": "Physics X 95",
+  "description": "A local-first multimedia history-of-physics lab inspired by Paul Halpern's writing.",
+  "id": "./#/home",
+  "start_url": "./#/home",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#122a27",
+  "theme_color": "#254f4a",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

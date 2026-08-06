@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Physics X 95 history lab icon</title>
+  <desc id="desc">An open amber book beneath two rust and teal orbital paths on a dark green field.</desc>
+  <rect width="128" height="128" rx="10" fill="#122a27"/>
+  <path d="M17 82c16-7 31-5 47 5v27c-16-10-31-12-47-5V82Zm94 0c-16-7-31-5-47 5v27c16-10 31-12 47-5V82Z" fill="#d8b35f" stroke="#f3e7c9" stroke-linejoin="round" stroke-width="3"/>
+  <path d="M64 87v27" stroke="#77522d" stroke-width="3"/>
+  <ellipse cx="64" cy="48" rx="43" ry="17" fill="none" stroke="#d18460" stroke-width="5" transform="rotate(-19 64 48)"/>
+  <ellipse cx="64" cy="48" rx="43" ry="17" fill="none" stroke="#76a99f" stroke-width="5" transform="rotate(38 64 48)"/>
+  <circle cx="64" cy="48" r="9" fill="#e3bd61" stroke="#f5ead0" stroke-width="3"/>
+  <circle cx="28" cy="34" r="5" fill="#f5ead0"/>
+  <circle cx="99" cy="61" r="5" fill="#f5ead0"/>
+</svg>
