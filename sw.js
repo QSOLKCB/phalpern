@@ -43,7 +43,9 @@ self.addEventListener('fetch', (event) => {
   event.respondWith(
     cachedResponse
       .then((cached) => cached || network)
-      .catch(() => event.request.mode === 'navigate' ? caches.match('./index.html') : Response.error())
+      .catch(() => (event.request.mode === 'navigate'
+        ? caches.match('./index.html').then((response) => response || Response.error())
+        : Response.error()))
   );
   event.waitUntil(network.catch(() => undefined));
 });
