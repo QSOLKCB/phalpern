@@ -1,0 +1,101 @@
+:root {
+  --bg: #f4f1e9;
+  --panel: #e8e2d4;
+  --accent: #2c3e50;
+  --highlight: #c0392b;
+  --text: #1a1a1a;
+  --border: #8b7355;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.toolbar {
+  background: linear-gradient(#d4c9b0, #c4b89a);
+  border-bottom: 3px solid var(--border);
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.brand h1 { font-size: 1.4rem; color: var(--accent); }
+.subtitle { font-size: 0.85rem; opacity: 0.8; }
+
+#main-nav button {
+  background: #f8f4e8;
+  border: 2px outset #d4c9b0;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+#main-nav button:active { border-style: inset; }
+
+#search {
+  margin-left: auto;
+  padding: 0.4rem 0.7rem;
+  border: 2px inset #d4c9b0;
+  background: #fffef8;
+  min-width: 220px;
+}
+
+.layout { display: flex; min-height: calc(100vh - 70px); }
+
+#explorer {
+  width: 260px;
+  background: var(--panel);
+  border-right: 3px solid var(--border);
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+#content {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  max-width: 900px;
+}
+
+article h2 { color: var(--accent); margin-bottom: 0.75rem; }
+article p { margin-bottom: 1rem; }
+.quote { font-style: italic; border-left: 4px solid var(--highlight); padding-left: 1rem; margin: 1.2rem 0; }
+
+#exhibit-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  z-index: 100;
+}
+#exhibit-overlay.hidden { display: none; }
+
+#exhibit-canvas {
+  background: #111;
+  border: 4px solid #555;
+  max-width: 95vw;
+}
+
+.exhibit-header { color: white; display: flex; gap: 2rem; margin-bottom: 0.5rem; }
+#exhibit-controls { margin-top: 0.75rem; color: white; }
+#exhibit-caption { color: #ddd; max-width: 700px; text-align: center; margin-top: 0.5rem; }
+
+.card {
+  background: white;
+  border: 2px solid var(--border);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 0 #c4b89a;
+  cursor: pointer;
+}
+.card:hover { background: #fffef5; }
+
+@media (max-width: 700px) {
+  .layout { flex-direction: column; }
+  #explorer { width: 100%; border-right: none; border-bottom: 3px solid var(--border); }
+}
