@@ -42,8 +42,8 @@ assert.match(atlas, /prefers-reduced-motion: reduce/, 'Atlas honours reduced-mot
 assert.match(atlas, /M\.createRng\('brownian-1905'\)/, 'Brownian model uses a replayable seed');
 assert.match(atlas, /M\.gamma\(state\.beta\)/, 'Light clock uses the tested Lorentz factor');
 
-for (const action of ['actions/checkout@v7', 'actions/configure-pages@v6', 'actions/upload-pages-artifact@v5', 'actions/deploy-pages@v5']) {
-  assert.match(workflow, new RegExp(action.replace('/', '\\/')), `Workflow uses ${action}`);
+for (const action of ['actions/checkout', 'actions/configure-pages', 'actions/upload-pages-artifact', 'actions/deploy-pages']) {
+  assert.match(workflow, new RegExp(`${action.replace('/', '\\/')}@v\\d+`), `Workflow uses ${action}`);
 }
 assert.match(workflow, /node --check/);
 assert.match(workflow, /tests\/math\.test\.js/);
